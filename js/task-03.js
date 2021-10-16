@@ -12,3 +12,15 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+
+const elemOfGallery = document.querySelector(`.gallery`)
+console.log(elemOfGallery)
+
+const addImg = images.map(el => {
+  return `<li> <img src="${el.url}" alt="${el.alt}"/> </li>`
+}).join("")
+
+console.log(addImg)
+elemOfGallery.insertAdjacentHTML("afterbegin", addImg)
+elemOfGallery.classList.add(`gallery-js`)
