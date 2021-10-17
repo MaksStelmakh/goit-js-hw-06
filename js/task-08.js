@@ -13,12 +13,12 @@ function onFormSubmit(event) {
         mail,
         password,
     }
-    if (mail || password !== ``) {
-       console.log(result) 
-        
+    if (mail && password !== ``) {
+     console.log(result)
+     form.reset();     
     } else {
-       return alert(`Bсе поля должны быть заполнены!`)
-    }  
-    form.reset(); 
+        alert(`Bсе поля должны быть заполнены!`)
+    }
+  
 }
 
