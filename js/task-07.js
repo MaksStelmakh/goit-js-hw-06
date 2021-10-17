@@ -8,3 +8,5 @@ jsSpan.style.fontSize = `${jsInput.value}px`;
 function sizeFunc() {
 jsSpan.style.fontSize = `${this.value}px`
 }
+
+
