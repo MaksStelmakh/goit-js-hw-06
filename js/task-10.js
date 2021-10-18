@@ -37,6 +37,7 @@ function createDivFunc() {
 
 function removeFunc() {
   boxesJs.innerHTML = ``;
+  startBox = 20
 }
 
 
